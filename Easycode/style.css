@@ -1,0 +1,174 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    text-decoration: none;
+    font-family: popping;
+    
+}
+h2{
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+}
+body{
+    background: url('images/bghome.jpg') no-repeat;
+    background-size:99%;
+    background-origin:unset;
+}
+header{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+    color: black;
+    padding:20px 0 ;
+    background-color: #20E791;
+}
+header nav a{
+    color:black ;
+    margin-right: 30px;
+    font-weight: 500;
+}
+
+header div.sign-in-up button{
+     background-color: aqua;
+     font-size: 16px;
+     font-weight: 550;
+     padding: 4px 12px;
+     border: 2px solid black;
+     border-radius: 5px;
+     outline: none;
+     margin-right: 10px;
+}
+header div.sign-in-up button:last-child{
+    background-color: rgb(212, 135, 135);
+    
+}
+div.popup-container{
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(127, 82, 250, 0.2);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    display: none;
+}
+div.popup-container div.popup{
+    background-color: white;
+    width: 350px;
+    border-radius: 5px;
+    padding: 20px 25px 30px 25px;
+}
+div.popup-container div.popup h2{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+    margin-bottom: 30px;
+    color: rgb(0, 0, 0);
+}
+div.popup-container div.popup h2 button{
+    border: none;
+    background-color: transparent;
+    outline: none;
+    font-size: 18px;
+    font-weight: 550;
+    color: rgb(0, 0, 0);
+}
+div.popup-container div.popup input{
+    width: 100%;
+    margin-bottom: 20px;
+    background-color: transparent;
+    border: none;
+    border-bottom: 2px solid rgb(255, 245, 245);
+    border-radius: 0;
+    padding: 5px 0;
+    font-weight: 550;
+    font-size: 14px;
+    outline: none;
+}
+div.popup-container div.register button.register-btn,button.login-btn{
+    font-weight: 550;
+    font-size: 15px;
+    color: white;
+    background-color: rgb(76, 76, 87);
+    padding: 4px 10px;
+    border: none;
+    outline: none;
+    margin-top: 5px;
+}
+div.popup-container div.register{
+    background-color: whitesmoke;
+}
+div.popup-container div.register h2{
+    color: rgb(0, 0, 0);
+}
+div.popup-container div.register input{
+    border-bottom-color:rgb(202, 172, 132) ;
+}
+div.popup-container div.register button.register-btn{
+    background-color: rgb(180, 147, 98);
+}
+button{
+    cursor: pointer;
+    border: 2px solid #fff;
+    margin-left: 40px;
+}
+#btn:hover{
+    opacity: 10px;
+    color: #fff;
+    background-color: #000;
+}
+
+nav a:hover{
+    text-decoration: underline;
+    transform-origin: left;
+    transition: 2s;
+}
+.navigation a::after {
+    content: '';
+    position: absolute;
+    left: 0;
+    bottom: -6px;
+    width: 100px;
+    height: 3px;
+    background: #fff;
+    border-radius: 5px;
+    transform-origin: right;
+    transform: scaleX(0);
+    transition: transform .5s;
+}
+
+#message {
+    display:none;
+    color: #000;
+    position: relative;
+    padding-left: 20px;
+    margin-top: 10px;
+}
+
+.valid {
+    color: green;
+}
+
+.invalid {
+    color: red;
+}
+  
+.invalid:before {
+    position: relative;
+    left: -35px;
+    content: "X";
+}
+
+h1{
+    bottom: 0;
+    padding-left: 40%;
+    position: absolute;
+}
+.login-btn{
+    background-color: #fff;
+    color: #000;
+}
